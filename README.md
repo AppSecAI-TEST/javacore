@@ -1,2 +1,0 @@
-# javacore
-QA Automation Course

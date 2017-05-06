@@ -1,13 +1,26 @@
 package com.kitcenter.app.classwork.lesson5;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.*;
 
 public class CalculatorTest {
+    int numberOne, numberTwo;
+
+    /*
+     Initialize test data for Calculator functionality
+     */
+    @BeforeClass
+    public static void setBeforeClassSetup(){
+
+    }
+
+    @Before
+    public void setup(){
+        numberOne = 10;
+        numberTwo = 40;
+    }
+
     @Test
     public void sumTest(){
-        int numberOne = 10;
-        int numberTwo = 40;
         int expectedResult = 50;
 
         Calculator calculator = new Calculator();
@@ -17,13 +30,21 @@ public class CalculatorTest {
 
     @Test
     public void substractTest(){
-        int number1 = 100;
-        int number2 = 90;
-        int expectedResult = 10;
+        int expectedResult = -30;
 
         Calculator calculator = new Calculator();
-        int actualResult = calculator.substract(number1, number2);
+        int actualResult = calculator.substract(numberOne, numberTwo);
         Assert.assertEquals(expectedResult, actualResult);
 
+    }
+
+    @After
+    public void tearDown(){
+        System.out.println("Postcondition for every test");
+    }
+
+    @AfterClass
+    public void tearDownAfterClass(){
+        System.out.println("Postcondition for class test");
     }
 }

@@ -1,9 +1,9 @@
 package com.kitcenter.app.utils.convertors;
 
 public class PrimitiveConvertor {
-    float float1 = 1.25f;
+    float float1 = 97.15f;
     char char1;
-    int int2 = 15;
+    int int2 = 98;
     char char2;
     char char3 = 'c';
     int int3;

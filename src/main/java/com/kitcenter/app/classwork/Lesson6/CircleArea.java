@@ -5,13 +5,14 @@ import java.util.Scanner;
 import static java.lang.Math.PI;
 
 public class CircleArea {
-    public static void calculate(){
+    public static double calculate(){
         Scanner scanner = new Scanner(System.in);
 
-        double radius = scanner.nextDouble();;
+        double radius = scanner.nextDouble();
         double circleArea = PI * (Math.pow(radius, 2));
 
         System.out.println("Area is " + circleArea);
+        return circleArea;
     }
 
     public static void calculateBigger(){

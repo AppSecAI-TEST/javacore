@@ -21,7 +21,10 @@ public class CircleArea {
         double area1 = scanner.nextDouble();
         double area2 = scanner.nextDouble();
 
-        if (area1 > area2) {
+        double radius1 = scanner.nextDouble();
+        double radius2 = scanner.nextDouble();
+
+        if (area1 > area2 || radius1 > radius2) {
             System.out.println("Area1 is bigger");
         }else{
             System.out.println("Area2 is bigger");

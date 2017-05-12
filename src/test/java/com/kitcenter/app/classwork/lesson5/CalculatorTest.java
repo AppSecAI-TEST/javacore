@@ -44,7 +44,7 @@ public class CalculatorTest {
     }
 
     @AfterClass
-    public void tearDownAfterClass(){
+    public static void tearDownAfterClass(){
         System.out.println("Postcondition for class test");
     }
 }

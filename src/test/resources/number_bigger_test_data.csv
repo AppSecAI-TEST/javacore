@@ -1,0 +1,7 @@
+numberOne,numberTwo,expectedResult
+45,2,1
+8,9,2
+75,75,0
+-1,-9,1
+-8,-2,2
+-3,-3,0

@@ -1,7 +1,12 @@
 package com.kitcenter.app.classwork.lesson5;
 
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.*;
+import org.junit.runner.RunWith;
 
+@RunWith(JUnitParamsRunner.class)
 public class CalculatorTest {
     int numberOne, numberTwo;
 
@@ -13,28 +18,19 @@ public class CalculatorTest {
 
     }
 
-    @Before
-    public void setup(){
-        numberOne = 10;
-        numberTwo = 40;
-    }
-
     @Test
-    public void sumTest(){
-        int expectedResult = 50;
-
+    @FileParameters(value="src/test/resources/calculator_sum_test_data.csv", mapper=CsvWithHeaderMapper.class)
+    public void sumTest(int numberOne, int numberTwo, int expRes){
         Calculator calculator = new Calculator();
         int actualResult = calculator.sum(numberOne, numberTwo);
-        Assert.assertEquals(expectedResult, actualResult);
+        Assert.assertEquals(expRes, actualResult);
     }
 
     @Test
-    public void substractTest(){
-        int expectedResult = -30;
-
+    @FileParameters(value="src/test/resources/calculator_substract_test_data.csv", mapper=CsvWithHeaderMapper.class)
+    public void substractTest(int numberOne, int numberTwo, int expRes){
         Calculator calculator = new Calculator();
-        int actualResult = calculator.substract(numberOne, numberTwo);
-        Assert.assertEquals(expectedResult, actualResult);
+        Assert.assertEquals(expRes, calculator.substract(numberOne, numberTwo));
 
     }
 

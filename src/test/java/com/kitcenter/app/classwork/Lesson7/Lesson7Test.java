@@ -3,22 +3,21 @@ package com.kitcenter.app.classwork.Lesson7;
 import com.kitcenter.app.classwork.Lesson7.NumberBigger;
 import com.kitcenter.app.classwork.Lesson7.NumberEven;
 import com.kitcenter.app.classwork.Lesson7.Triangle;
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+@RunWith(JUnitParamsRunner.class)
 public class Lesson7Test {
 
     @Test
-    public void checkIfCouldBeSides1Test(){
-        int a = 3;
-        int b = 4;
-        int c = 5;
-        boolean expectedResult = true;
-
+    @FileParameters(value="src/test/resources/triangle_sides_test_data.csv", mapper=CsvWithHeaderMapper.class)
+    public void checkIfCouldBeSides1Test(int a, int b, int c, boolean expResult){
         Triangle triangle = new Triangle();
-        boolean actualResult = triangle.checkIfCouldBeSides(a, b, c);
-
-        Assert.assertEquals(expectedResult, actualResult);
+        Assert.assertEquals(expResult, triangle.checkIfCouldBeSides(a, b, c));
     }
 
     @Test
@@ -35,14 +34,10 @@ public class Lesson7Test {
     }
 
     @Test
-    public void isEven1Test(){
-        int a = 24;
-        boolean expectedResult = true;
-
+    @FileParameters(value="src/test/resources/number_even_test_data.csv", mapper=CsvWithHeaderMapper.class)
+    public void isEven1Test(int a, boolean expRes){
         NumberEven number = new NumberEven();
-        boolean actualResult = number.isEven(a);
-
-        Assert.assertEquals(expectedResult, actualResult);
+        Assert.assertEquals(expRes, number.isEven(a));
     }
 
     @Test
@@ -57,15 +52,10 @@ public class Lesson7Test {
     }
 
     @Test
-    public void numberBiggerNoScanner1Test(){
-        int n1 = 25;
-        int n2 = 12;
-        int expectedResult = 1;
-
+    @FileParameters(value="src/test/resources/number_bigger_test_data.csv", mapper=CsvWithHeaderMapper.class)
+    public void numberBiggerNoScanner1Test(int n1, int n2, int expRes){
         NumberBigger numberBigger = new NumberBigger();
-        int actualResult = numberBigger.numberBiggerNoScanner(n1,n2);
-
-        Assert.assertEquals(expectedResult, actualResult);
+        Assert.assertEquals(expRes, numberBigger.numberBiggerNoScanner(n1,n2));
     }
 
     @Test

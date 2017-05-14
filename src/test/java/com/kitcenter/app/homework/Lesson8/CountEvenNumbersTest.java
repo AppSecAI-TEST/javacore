@@ -17,5 +17,4 @@ public class CountEvenNumbersTest {
         CountEvenNumbers countEvenNumbers = new CountEvenNumbers();
         Assert.assertEquals(expRes, countEvenNumbers.countEvenNumbers2(from, to));
     }
-
 }

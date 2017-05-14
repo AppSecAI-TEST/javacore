@@ -1,8 +1,5 @@
 package com.kitcenter.app.classwork.Lesson7;
 
-import com.kitcenter.app.classwork.Lesson7.NumberBigger;
-import com.kitcenter.app.classwork.Lesson7.NumberEven;
-import com.kitcenter.app.classwork.Lesson7.Triangle;
 import junitparams.FileParameters;
 import junitparams.JUnitParamsRunner;
 import junitparams.mappers.CsvWithHeaderMapper;

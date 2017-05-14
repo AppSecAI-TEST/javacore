@@ -12,8 +12,6 @@ public class CountEvenNumbers {
     }
 
     public int countEvenNumbers2(int from, int to){
-        //int from;
-        //int to;
         int count = 0;
         for (int a = from; a <=to; a++){
             if (a%2==0){

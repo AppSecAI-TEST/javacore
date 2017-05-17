@@ -1,6 +1,6 @@
 package com.kitcenter.app.homework.Lesson8;
 
-import com.kitcenter.app.classwork.Lesson8.CountEvenNumbers;
+import com.kitcenter.app.classwork.Lesson7.CountEvenNumbers;
 import junitparams.FileParameters;
 import junitparams.JUnitParamsRunner;
 import junitparams.mappers.CsvWithHeaderMapper;

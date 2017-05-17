@@ -1,6 +1,6 @@
-package com.kitcenter.runners.classwork.Lesson8;
+package com.kitcenter.runners.classwork.Lesson7;
 
-import com.kitcenter.app.classwork.Lesson8.TwoNumbersEqual;
+import com.kitcenter.app.classwork.Lesson7.TwoNumbersEqual;
 
 import java.util.Scanner;
 

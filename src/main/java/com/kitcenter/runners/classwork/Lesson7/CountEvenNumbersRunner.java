@@ -1,11 +1,10 @@
-package com.kitcenter.runners.classwork.Lesson8;
+package com.kitcenter.runners.classwork.Lesson7;
 
-import com.kitcenter.app.classwork.Lesson8.CountEvenNumbers;
+import com.kitcenter.app.classwork.Lesson7.CountEvenNumbers;
 
 public class CountEvenNumbersRunner {
     public static void main(String[] args) {
         CountEvenNumbers countEvenNum = new CountEvenNumbers();
         countEvenNum.countEvenNumbers();
-
     }
 }

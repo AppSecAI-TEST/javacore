@@ -1,4 +1,4 @@
-package com.kitcenter.app.classwork.Lesson8;
+package com.kitcenter.app.classwork.Lesson7;
 
 public class TwoNumbersEqual {
     public void numberDecrease(int a, int b){

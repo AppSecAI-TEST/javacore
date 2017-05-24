@@ -3,10 +3,6 @@ package com.kitcenter.app.classwork.Lesson7;
 import java.util.Scanner;
 
 public class Triangle {
-    int a;
-    int b;
-    int c;
-
     public boolean checkIfCouldBeSides(int a, int b, int c){
         int c2 = c*c;
         int a2b2 = a*a + b*b;

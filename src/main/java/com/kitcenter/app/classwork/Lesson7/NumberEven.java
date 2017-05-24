@@ -3,8 +3,6 @@ package com.kitcenter.app.classwork.Lesson7;
 import java.util.Scanner;
 
 public class NumberEven {
-    int a;
-
     public boolean isEven(int a){
         boolean res;
         int r = a%2;

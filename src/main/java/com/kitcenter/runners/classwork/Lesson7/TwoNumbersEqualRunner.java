@@ -12,7 +12,7 @@ public class TwoNumbersEqualRunner {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        twoNumbersEqual.numberDecrease2(a, b);
+        twoNumbersEqual.numberDecrease(a, b);
 
 
     }

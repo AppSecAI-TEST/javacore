@@ -3,14 +3,14 @@ package com.kitcenter.app.homework.Lesson6;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HomeworkMethodsTest {
+public class HomeTask6Test {
 
     @Test
     public void calculateTest() {
         double expectedResult = 12.566370614359172;
 
-        HomeworkMethods circleArea = new HomeworkMethods();
-        double actualResult = circleArea.calculateArea();
+        HomeTask6 circleArea = new HomeTask6();
+        double actualResult = circleArea.calculateArea(2);
 
         Assert.assertEquals(expectedResult, actualResult, 0.0);
     }
@@ -21,7 +21,7 @@ public class HomeworkMethodsTest {
         int area2 = 15;
         int expectedResult = 15;
 
-        HomeworkMethods calculateBiggerArea = new HomeworkMethods();
+        HomeTask6 calculateBiggerArea = new HomeTask6();
         int actualResult = calculateBiggerArea.calculateBigger(area1, area2);
 
         Assert.assertEquals(expectedResult, actualResult);
@@ -32,7 +32,7 @@ public class HomeworkMethodsTest {
         int age = 17;
         boolean expectedResult = false;
 
-        HomeworkMethods isAdultActual = new HomeworkMethods();
+        HomeTask6 isAdultActual = new HomeTask6();
         boolean actualResult = isAdultActual.isAdult(age);
 
         Assert.assertEquals(expectedResult, actualResult);
@@ -43,7 +43,7 @@ public class HomeworkMethodsTest {
         int age = 18;
         boolean expectedResult = true;
 
-        HomeworkMethods isAdultActual = new HomeworkMethods();
+        HomeTask6 isAdultActual = new HomeTask6();
         boolean actualResult = isAdultActual.isAdult(age);
 
         Assert.assertEquals(expectedResult, actualResult);
@@ -57,7 +57,7 @@ public class HomeworkMethodsTest {
         int d = 5;
         int expectedResult = 14;
 
-        HomeworkMethods perimeterActual = new HomeworkMethods();
+        HomeTask6 perimeterActual = new HomeTask6();
         int actualResult = perimeterActual.perimeter(a,b,c,d);
 
         Assert.assertEquals(expectedResult, actualResult);
@@ -68,7 +68,7 @@ public class HomeworkMethodsTest {
         int a = 2;
         int expectedResult = 8;
 
-        HomeworkMethods perimeterActual = new HomeworkMethods();
+        HomeTask6 perimeterActual = new HomeTask6();
         int actualResult = perimeterActual.perimeterSquare(a);
 
         Assert.assertEquals(expectedResult, actualResult);
@@ -80,7 +80,7 @@ public class HomeworkMethodsTest {
         int b = 10;
         int expectedResult = 250;
 
-        HomeworkMethods rectangleAreaActual = new HomeworkMethods();
+        HomeTask6 rectangleAreaActual = new HomeTask6();
         int actualResult = rectangleAreaActual.rectangleArea(a,b);
 
         Assert. assertEquals(expectedResult, actualResult);
@@ -92,7 +92,7 @@ public class HomeworkMethodsTest {
         double b = 5;
         double expectedResult = 0.05;
 
-        HomeworkMethods divideActual = new HomeworkMethods();
+        HomeTask6 divideActual = new HomeTask6();
         double actualResult = divideActual.divide(a,b);
 
         Assert.assertEquals(expectedResult, actualResult, 0);
@@ -104,7 +104,7 @@ public class HomeworkMethodsTest {
         double b = 4;
         double expectedResult = 21.0;
 
-        HomeworkMethods multiplyActual = new HomeworkMethods();
+        HomeTask6 multiplyActual = new HomeTask6();
         double actualResult = multiplyActual.multiply(a,b);
 
         Assert.assertEquals(expectedResult, actualResult, 0);
@@ -115,7 +115,7 @@ public class HomeworkMethodsTest {
         int a = 25;
         double expectedResult = 5.0;
 
-        HomeworkMethods sqrtActual = new HomeworkMethods();
+        HomeTask6 sqrtActual = new HomeTask6();
         double actualResult = sqrtActual.sqrt(a);
 
         Assert.assertEquals(expectedResult, actualResult, 0);
@@ -126,7 +126,7 @@ public class HomeworkMethodsTest {
         int a = 27;
         double expectedResult = 3.0;
 
-        HomeworkMethods cbrtActual = new HomeworkMethods();
+        HomeTask6 cbrtActual = new HomeTask6();
         double actualResult = cbrtActual.cbrt(a);
 
         Assert.assertEquals(expectedResult, actualResult, 0);
@@ -137,7 +137,7 @@ public class HomeworkMethodsTest {
         double a = 27.15;
         double expectedResult = 28.0;
 
-        HomeworkMethods ceilActual = new HomeworkMethods();
+        HomeTask6 ceilActual = new HomeTask6();
         double actualResult = ceilActual.ceil(a);
 
         Assert.assertEquals(expectedResult, actualResult, 0);
@@ -148,7 +148,7 @@ public class HomeworkMethodsTest {
         double a = 27.15;
         double expectedResult = 27.0;
 
-        HomeworkMethods floorActual = new HomeworkMethods();
+        HomeTask6 floorActual = new HomeTask6();
         double actualResult = floorActual.floor(a);
 
         Assert.assertEquals(expectedResult, actualResult, 0);

@@ -6,7 +6,7 @@ import com.kitcenter.app.classwork.Lesson7.Triangle;
 
 import java.util.Scanner;
 
-public class Lesson4Runner {
+public class HomeTask7Runner {
     public static void main(String[] args) {
         Triangle triangle = new Triangle();
         NumberEven numberEven = new NumberEven();

@@ -2,9 +2,8 @@ package com.kitcenter.app.homework.Lesson6;
 
 import static java.lang.Math.PI;
 
-public class HomeworkMethods {
-    public double calculateArea(){
-        double radius = 2;
+public class HomeTask6 {
+    public double calculateArea(double radius){
         double circleArea = PI * (Math.pow(radius, 2));
 
         System.out.println("Area is " + circleArea);
@@ -13,8 +12,10 @@ public class HomeworkMethods {
 
     public int calculateBigger(int area1, int area2){
         if (area1 > area2) {
+            System.out.println("Number " + area1 + " is bigger.");
             return area1;
         }else{
+            System.out.println("Number " + area2 + " is bigger.");
             return area2;
         }
     }
@@ -23,8 +24,10 @@ public class HomeworkMethods {
         boolean result;
         if (age>=18) {
             result = true;
+            System.out.println("Person is adult.");
         }else {
             result = false;
+            System.out.println("Person is not adult.");
         }
         return result;
     }

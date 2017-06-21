@@ -10,17 +10,18 @@ public class BicycleRunner {
         Bicycle bma = new BMA();
         Bicycle acme = new ACME();
         Bicycle bmn = new BMN();
-        change(bma, 12);
-        change(acme, 25);
-        change(bmn, 10);
+        bycicleActions(bma, 12, 10);
+        bycicleActions(acme, 25, 45);
+        bycicleActions(bmn, 10, 28);
 
         System.out.println(Bicycle.PI);
 
 
     }
 
-    public static void change(Bicycle bicycle, int value){
+    public static void bycicleActions(Bicycle bicycle, int value, int speed){
         bicycle.changeGear(value);
         bicycle.shift();
+        bicycle.changeSpeed(speed);
     }
 }

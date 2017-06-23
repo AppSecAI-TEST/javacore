@@ -5,7 +5,6 @@ public class Enigma {
         String plainText = "ABCDEFGHIJKLO";
         String cypherText = "MVPSZXYUTQWNR";
         StringBuilder builder = new StringBuilder(stringToEncode);
-        String encodedString = "";
 
         for(int i = 0; i < builder.length(); i++){
             for(int j = 0; j < plainText.length();j++){
@@ -15,7 +14,7 @@ public class Enigma {
                 }
             }
         }
-        encodedString = builder.toString();
+        String encodedString = builder.toString();
         System.out.println(encodedString);
         return encodedString;
     }

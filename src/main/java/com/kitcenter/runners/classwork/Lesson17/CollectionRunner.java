@@ -11,23 +11,27 @@ public class CollectionRunner {
         arrayList.add(abc);
         arrayList.add(abc2);
         arrayList.add(0, abc3);
+        int size4 = arrayList.size();
+        System.out.println(size4);
 
         System.out.println(arrayList);
 
         int size = arrayList.size();
         System.out.println(size);
 
-        arrayList.remove(1);
+        arrayList.remove("abc");
+        System.out.println(arrayList);
+        int size2 = arrayList.size();
+        System.out.println(size2);
         arrayList.trimToSize();
         System.out.println(arrayList);
-
+        int size3 = arrayList.size();
+        System.out.println(size3);
         System.out.println(arrayList.isEmpty());
         System.out.println(arrayList.lastIndexOf("Haha"));
         System.out.println(arrayList.lastIndexOf("abc2"));
         System.out.println(arrayList.lastIndexOf(abc2));
         System.out.println(arrayList.contains(abc3));
-
         System.out.println(arrayList.get(1));
-
     }
 }

@@ -6,6 +6,5 @@ public class ReaderWriterRunner {
     public static void main(String[] args) {
         ReaderWriter readerWriter = new ReaderWriter();
         readerWriter.readFile();
-
     }
 }

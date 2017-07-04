@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class ReaderWriter {
     public void readFile(){
-        BufferedReader reader = null;
+        BufferedReader reader;
         try {
             reader = new BufferedReader(new FileReader("D:\\IT\\Javacore\\javacore\\src\\main\\resources\\Reader.txt"));
         String line;
@@ -20,7 +20,7 @@ public class ReaderWriter {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            System.out.println("Text");;
+            System.out.println("Text");
         }
     }
 }

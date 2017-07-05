@@ -10,4 +10,9 @@ public class BoxPrinterGeneric <T> {
     }
 
     public T getValue(){return val;}
+
+    public <T extends Number> void genericMethod(BoxPrinterGeneric<T> t){
+        System.out.println(t);
+
+    }
 }

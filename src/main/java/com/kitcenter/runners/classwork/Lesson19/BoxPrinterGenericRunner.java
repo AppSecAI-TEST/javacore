@@ -19,5 +19,6 @@ public class BoxPrinterGenericRunner {
         boolean compare = OrderUtil.compareValue(integer1, integer2);
         System.out.println(compare);
 
+
     }
 }

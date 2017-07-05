@@ -2,6 +2,7 @@ package com.kitcenter.runners.classwork.Lesson19;
 
 import com.kitcenter.app.classwork.Lesson19.OrderPair;
 import com.kitcenter.app.classwork.Lesson19.OrderUtil;
+import com.kitcenter.app.classwork.Lesson20.Pair;
 
 public class OrderRunner {
     public static void main(String[] args) {
